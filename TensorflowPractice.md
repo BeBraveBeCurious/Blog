@@ -10,6 +10,7 @@
 
 #### HelloWorld Code in tf
 ![HelloWorld_ALayerNN](https://github.com/BeBraveBeCurious/Blog/blob/master/TensorflowPractice/LinearRegressionTF.PNG)
+
 model.predict([10.0])很接近19，但不完全等于，保有一定的不确定性 -> 分类任务很有用
 
 #### howework:审题，样本scale，可以打印输出时*100K
@@ -31,6 +32,8 @@ FashionMNIST: 7k Image, 28*28Greyscale, 10 categories
 - logs.get('acc')>0.99
 - 输入像素需标准化： x_train, x_test = x_train / 255.0, x_test / 255.0 
 - label为0-10，不需要标准化
+- label不用语言描述、减少model bias
+![ML&human bias](https://developers.google.com/machine-learning/fairness-overview/)
 
 
 
